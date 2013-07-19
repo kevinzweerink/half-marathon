@@ -7,10 +7,21 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/half-marathon/css/syntax.css">
+        <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/half-marathon/css/main.css">
+        <link rel="stylesheet" href="/css/main.css">
+
+        <!-- Redirect to kevinzweerink.com -->
+
+        <script type="text/javascript">
+          if(window.location.hostname === "kevinzweerink.github.io") {
+            var path = window.location.pathname;
+            var hash = window.location.hash;
+
+            window.location ="http://half-marathon.kevinzweerink.com";
+          }
+        </script>
 
     </head>
     <body>
@@ -19,7 +30,7 @@
           <div class="site">
             <div class="header">
               <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
-              <a class="extra" href="/half-marathon">home</a>
+              <a class="extra" href="/">home</a>
             </div>
 
                 <h2>Setting the Stakes</h2>
