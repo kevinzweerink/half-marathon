@@ -4,7 +4,157 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 
-.yo {
-	content: "mama";
+$blue : #c7ddf2;
+$red : #ed594a;
+$yellow : #edf236;
+$white : $red;
+$sans-serif : "Helvetica Neue", helvetica, arial, sans-serif;
+$serif : "minion-pro", Minion Pro, serif;
+$mono : "inconsolata", courier, monospace;
+
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	background-color: $blue;
+	font-family: $sans-serif;
+}
+
+.sidebar {
+	width: 25%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $red;
+	padding: 5em 3em 2em;
+
+	h1 {
+		font-family: $sans-serif;
+		color: $blue;
+		font-weight: bold;
+		padding-bottom: 1em;
+		border-bottom: 1px solid $blue;
+	}
+
+	h3 {
+		font-family: $sans-serif;
+		color: $blue;
+		font-weight: bold;
+		margin-top: 3em;
+	}
+
+	a {
+		font-family: $serif;
+		color: $blue;
+	}
+}
+
+.posts {
+	margin-top: 1em;
+	overflow: scroll;
+
+	a {
+		font-size: .875em;
+	}
+	li {
+		margin-bottom: .6em;
+	}
+}
+
+.reason {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	p {
+		border-top: 1px solid $blue;
+		font-family: $sans-serif;
+		color: $blue;
+		font-size: .875em;
+		margin: 1em 3em 0;
+		padding: 1em 0 2.5em;
+
+		a {
+			font-family: $sans-serif;
+		}
+	}
+}
+
+.content {
+	margin-left: 25%;
+}
+
+.content-inner {
+	width: 75%;
+	max-width: 600px;
+	min-width: 400px;
+	margin: 5em auto;
+	color: $white;
+
+	h3 {
+		font-weight: bold;
+		margin-bottom: 1.4em;
+	}
+
+	h2 {
+		font-family: $serif;
+		font-size: 1.5em;
+		font-weight: normal;
+		margin-bottom: .5em;
+	}
+
+	p.date {
+		font-family: $mono;
+		font-size: .875em;
+	}
+}
+
+.post {
+	margin: 1em 0;
+	border-top: 1px solid $white;
+	padding: 1em 0 0 0;
+	border-bottom: 1px solid $white;
+	font-family: $serif;
+	p, ol {
+		font-size: 1em;
+		line-height: 1.428571429;
+		margin-bottom: 1.5em;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 1em;
+		font-weight: bold;
+		margin-bottom: .5em;
+		font-family: $sans-serif;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+
+	a {
+		color: $red;
+	}
+}
+
+.navigation {
+	a {
+		display: inline-block;
+		color: $white;
+		font-weight: bold;
+		text-decoration: none;
+		padding-right: 1em;
+		font-size: .875em;
+
+		&.disabled {
+			text-decoration: line-through;
+			cursor: default;
+		}
+	}
 }

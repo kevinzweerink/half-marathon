@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Setting the Stakes
+day: 1
+miles: 2.17
 ---
 
 Today, after watching about twenty minutes of a movie about marathons, I decided I'd like to run a half marathon. The Baltimore Running Festival Half Marathon. It is on October 12, 2013, which is 12.5 weeks from today, July 17, 2013. After about two solid minutes of research, I found a half marathon training plan that is exactly 12 weeks long, and starts around three miles (though I missed the first day, which was supposed to be yesterday). On the schedule for today: 2 miles. 
