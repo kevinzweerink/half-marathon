@@ -17,7 +17,7 @@ $mono : "inconsolata", monospace;
 $sans : "franklin-gothic-urw", Franklin Gothic, verdana, helvetica, arial, sans-serif;
 
 $text-line-height : 1.714285714;
-$smaller-text : .875em;
+$smaller-text : .9375em;
 
 $pad : 1.3em;
 $smallpad : .8em;
@@ -25,6 +25,13 @@ $smallpad : .8em;
 %inline-block {
 	padding: $pad;
 	display: inline-block;
+}
+
+::selection {
+	background: #FAF20C;
+}
+::-moz-selection {
+	background: #FAF20C;
 }
 
 body {
@@ -94,7 +101,7 @@ header {
 	.post {
 		padding: $pad 0;
 		font-family: $sans;
-		//font-size: $smaller-text;
+		font-size: $smaller-text;
 		line-height: $text-line-height;
 		border-bottom: $border;
 		margin-bottom: $pad;
