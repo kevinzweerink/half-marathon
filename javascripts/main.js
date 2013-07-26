@@ -7,7 +7,6 @@ function MileCounter(options) {
 		var total = 0;
 		for (var i = 0; i < _this.milesArray.length; i+=1) {
 			total += _this.milesArray[i];
-			console.log(total);
 		}
 		return total;
 	}
@@ -37,3 +36,33 @@ function MetricInsertion(options) {
 
 	this.insertData();
 }
+
+$(function() {
+	// function layOut() {
+	// 	var wrapperHeight = $(".wrapper").height();
+	// 	var windowHeight = $(window).height();
+
+	// 	console.log($("body").height());
+	// 	console.log($(window).height());
+
+	// 	if (wrapperHeight < windowHeight) {
+	// 		$(".wrapper").css("height", windowHeight);
+	// 		$("footer").css({
+	// 			"position" : "absolute",
+	// 			"bottom" : "0",
+	// 			"width" : "100%"
+	// 		});
+	// 	} else {
+	// 		$(".wrapper").css("height", "auto");
+	// 		$("footer").css({
+	// 			"position" : "relative",
+	// 		});
+	// 	}
+	// }
+
+	// layOut();
+
+	// $(window).resize(function() {
+	// 	layOut();
+	// });
+});
