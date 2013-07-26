@@ -64,7 +64,9 @@
     var counter = new MileCounter({ mileages : [
         {% for post in site.posts %}{{  post.miles }}{% if forloop.last != true %},{% endif %}{% endfor %}
       ] });
-    var metric = new MetricInsertion({ temp : {{ page.temp }}, distance : {{ page.miles }} })
+    if (window.location.pathname != "/archive.html") {
+      var metric = new MetricInsertion({ temp : {{ page.temp }}{% if page.title == "Archive" %}{{ "archive" }}{% endif %}, distance : {{ page.miles }}{% if page.title == "Archive" %}{{ "archive" }}{% endif %} }); 
+    }
   });
 </script>
 </html>
