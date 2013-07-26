@@ -4,8 +4,8 @@ layout: default
 <div class="metadata">
 	<h3>Day {{ page.day }}</h3>
 	<h3>{{ page.date | date_to_string }}</h3>
-	<h3>{{ page.miles }} miles</h3>
-	<h3>{{ page.temp }}&deg;F</h3>
+	<h3 class="distance">{{ page.miles }} miles</h3>
+	<h3 class="temp">{{ page.temp }}&deg;F</h3>
 </div>
 
 <div class="post-container">

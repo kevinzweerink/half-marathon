@@ -19,3 +19,21 @@ function MileCounter(options) {
 	this.totalMiles = this.addMileages();
 	this.insertMiles();
 }
+
+function MetricInsertion(options) {
+	this.calculateKM = function() {
+		return options.distance * 1.6;
+	}
+
+	this.calculateCelsius = function() {
+		return (options.temp - 32) * (5/9);
+	}
+
+	this.insertData = function() {
+		var degree = '°';
+		$(".distance").text(options.distance + " miles / " + this.calculateKM().toFixed(1) + "k");
+		$(".temp").text(options.temp + degree + "F / " + this.calculateCelsius().toFixed(0) + degree + "C");
+	}
+
+	this.insertData();
+}

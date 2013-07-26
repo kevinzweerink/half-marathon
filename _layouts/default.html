@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
@@ -58,12 +58,13 @@
     </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="/javascripts/main.js"></script>
-<script>
+<script src="/javascripts/main.js" charset="utf-8"></script>
+<script charset="utf-8">
   $(function(){
     var counter = new MileCounter({ mileages : [
         {% for post in site.posts %}{{  post.miles }}{% if forloop.last != true %},{% endif %}{% endfor %}
-      ] })
+      ] });
+    var metric = new MetricInsertion({ temp : {{ page.temp }}, distance : {{ page.miles }} })
   });
 </script>
 </html>
