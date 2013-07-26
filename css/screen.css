@@ -285,24 +285,23 @@ footer .contact a {
   /* line 234, ../_sass/screen.scss */
   header h1 {
     border-bottom: none;
-    content: ".5M";
   }
 
-  /* line 240, ../_sass/screen.scss */
+  /* line 239, ../_sass/screen.scss */
   .content {
     width: 90%;
   }
 
-  /* line 245, ../_sass/screen.scss */
+  /* line 244, ../_sass/screen.scss */
   footer .reason, footer .contact {
     float: left;
   }
-  /* line 249, ../_sass/screen.scss */
+  /* line 248, ../_sass/screen.scss */
   footer .contact a {
     margin-left: 0;
     margin-right: 1em;
   }
-  /* line 254, ../_sass/screen.scss */
+  /* line 253, ../_sass/screen.scss */
   footer .contact {
     margin-bottom: 1em;
   }

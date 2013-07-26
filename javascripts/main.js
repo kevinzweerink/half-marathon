@@ -38,6 +38,21 @@ function MetricInsertion(options) {
 }
 
 $(function() {
+	if($(window).width() < 656) {
+		$("header h1").text(".5-Ma")
+	} else {
+		$("header h1").text("Half-Marathon");
+	}
+
+	$(window).resize(function() {
+		var width = $(window).width();
+		if(width < 656) {
+			$("header h1").text(".5-Ma")
+		} else {
+			$("header h1").text("Half-Marathon");
+		}
+	});
+
 	// function layOut() {
 	// 	var wrapperHeight = $(".wrapper").height();
 	// 	var windowHeight = $(window).height();
