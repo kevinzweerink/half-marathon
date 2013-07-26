@@ -3,6 +3,7 @@ layout: post
 title: First Test
 day: 3
 miles: 4.1
+temp: 78
 ---
 
 Currently drying off after my first "long run" of the program. In case you don't know, training programs for long distance runs like marathons, half-marathons, &c are generally structured to include three or so normal length runs throughout the week to maintain fitness, and one long run on the weekend to push endurance to the next level. Over the course of the program, all of the distances get longer, but the mileage ratio between long and maintenance runs stays about the same. 

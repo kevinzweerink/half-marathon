@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="archive">
+	{% for post in site.posts %}
+	<a href="{{ post.url }}"><div class="archive-item">
+		<h3>Day {{ post.day }}: {{ post.title }}</h3>
+		<h4>{{ post.date | date_to_string }}</h4>
+		<h4>{{ post.temp }}&deg;F</h4>
+		<h4>{{ post.miles }} miles</h4>
+	</div></a>
+	{% endfor %}
+</div>

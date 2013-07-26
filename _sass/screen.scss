@@ -6,155 +6,171 @@
 @import "compass/reset";
 @import "compass/css3";
 
-$blue : #c7ddf2;
-$red : #ed594a;
-$yellow : #edf236;
-$white : $red;
-$sans-serif : "Helvetica Neue", helvetica, arial, sans-serif;
-$serif : "minion-pro", Minion Pro, serif;
-$mono : "inconsolata", courier, monospace;
+$blue : #506dea;
+$dark : #4663c1;
+$light : #6284ef;
+$white : #fff;
 
-* {
-	@include box-sizing(border-box);
+$border : 1px solid $dark;
+
+$mono : "inconsolata", monospace;
+$sans : "franklin-gothic-urw", Franklin Gothic, verdana, helvetica, arial, sans-serif;
+
+$text-line-height : 1.714285714;
+$smaller-text : .875em;
+
+$pad : 1.3em;
+$smallpad : .8em;
+
+%inline-block {
+	padding: $pad;
+	display: inline-block;
 }
 
 body {
 	background-color: $blue;
-	font-family: $sans-serif;
+	font-family: $mono;
+	font-size: 16px;
+	color: $white;
+	min-height: 100%;
+	position: relative;
+
+	-webkit-font-smoothing: antialiased;
 }
 
-.sidebar {
-	width: 25%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: $red;
-	padding: 5em 3em 2em;
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	border-bottom: $border;
 
 	h1 {
-		font-family: $sans-serif;
-		color: $blue;
-		font-weight: bold;
-		padding-bottom: 1em;
-		border-bottom: 1px solid $blue;
+		@extend %inline-block;
+
+		background-color: $light;
+		border-right: $border;
+		border-bottom: $border;
 	}
 
-	h3 {
-		font-family: $sans-serif;
-		color: $blue;
-		font-weight: bold;
-		margin-top: 3em;
+	.count {
+		@extend %inline-block;
 	}
 
-	a {
-		font-family: $serif;
-		color: $blue;
-	}
-}
-
-.posts {
-	margin-top: 1em;
-	overflow: scroll;
-
-	a {
-		font-size: .875em;
-	}
-	li {
-		margin-bottom: .6em;
-	}
-}
-
-.reason {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	p {
-		border-top: 1px solid $blue;
-		font-family: $sans-serif;
-		color: $blue;
-		font-size: .875em;
-		margin: 1em 3em 0;
-		padding: 1em 0 2.5em;
-
-		a {
-			font-family: $sans-serif;
-		}
+	.nav {
+		@extend %inline-block;
+		float: right;
 	}
 }
 
 .content {
-	margin-left: 25%;
+	width: 70%;
+	margin: 4em auto 8em;
+	overflow: hidden;
 }
 
-.content-inner {
-	width: 75%;
-	max-width: 600px;
-	min-width: 400px;
-	margin: 5em auto;
-	color: $white;
+.metadata {
+	width: 25%;
+	margin-right: 5%;
+	float: left;
 
 	h3 {
-		font-weight: bold;
-		margin-bottom: 1.4em;
+		padding: $smallpad 0;
+		border-bottom: $border;
 	}
+}
+
+.post-container {
+	width: 70%;
+	float: right;
 
 	h2 {
-		font-family: $serif;
-		font-size: 1.5em;
-		font-weight: normal;
-		margin-bottom: .5em;
+		padding: $smallpad 0;
+		border-bottom: $border;
 	}
 
-	p.date {
-		font-family: $mono;
-		font-size: .875em;
+	.post {
+		padding: $pad 0;
+		font-family: $sans;
+		//font-size: $smaller-text;
+		line-height: $text-line-height;
+		border-bottom: $border;
+		margin-bottom: $pad;
+
+		a {
+			@include transition(background-color .15s ease);
+			background-color: $dark;
+
+			&:hover {
+				background-color: $light;
+			}
+		}
+
+		h2, h3 {
+			display: inline-block;
+			padding: 0;
+			margin: $smallpad 0;
+			border-bottom: $border;
+		}
+
+		ol {
+			list-style-type: decimal;
+		}
 	}
+
+	p {
+		margin-bottom: $pad;
+		
+		&:last-of-type {
+			margin-bottom: 0;
+		}	
+	}
+
 }
 
-.post {
-	margin: 1em 0;
-	border-top: 1px solid $white;
-	padding: 1em 0 0 0;
-	border-bottom: 1px solid $white;
-	font-family: $serif;
-	p, ol {
-		font-size: 1em;
-		line-height: 1.428571429;
-		margin-bottom: 1.5em;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		font-size: 1em;
-		font-weight: bold;
-		margin-bottom: .5em;
-		font-family: $sans-serif;
-	}
-
-	ol {
-		list-style-type: decimal;
-	}
-
-	a {
-		color: $red;
-	}
+.archive {
+	width: 100%;
+	border-top: $border;
 }
 
-.navigation {
-	a {
+.archive-item {
+	@include transition(background-color .15s ease);
+
+	padding: $pad $smallpad;
+	border-bottom: $border;
+
+	&:hover {
+		background-color: $light;
+	}
+
+	h3, h4 {
 		display: inline-block;
-		color: $white;
-		font-weight: bold;
-		text-decoration: none;
-		padding-right: 1em;
-		font-size: .875em;
+		padding-right: 2em;
+	}
 
-		&.disabled {
-			text-decoration: line-through;
-			cursor: default;
+	h4:last-of-type {
+		padding-right: 0;
+		float: right;
+	}
+}
+
+footer {
+
+	border-top: $border;
+	font-size: $smaller-text;
+
+	.reason, .contact {
+		@extend %inline-block;
+	}
+
+	.contact {
+		float: right;
+
+		a {
+			display: inline-block;
+			margin-left: 2em;
 		}
 	}
 }

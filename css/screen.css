@@ -67,159 +67,155 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 17, ../_sass/screen.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* line 25, ../_sass/screen.scss */
+header h1, header .count, header .nav, footer .reason, footer .contact {
+  padding: 1.3em;
+  display: inline-block;
 }
 
-/* line 21, ../_sass/screen.scss */
+/* line 30, ../_sass/screen.scss */
 body {
-  background-color: #c7ddf2;
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  background-color: #506dea;
+  font-family: "inconsolata", monospace;
+  font-size: 16px;
+  color: white;
+  min-height: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 26, ../_sass/screen.scss */
-.sidebar {
-  width: 25%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #ed594a;
-  padding: 5em 3em 2em;
+/* line 41, ../_sass/screen.scss */
+a {
+  color: inherit;
+  text-decoration: none;
 }
-/* line 35, ../_sass/screen.scss */
-.sidebar h1 {
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-  color: #c7ddf2;
-  font-weight: bold;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #c7ddf2;
-}
-/* line 43, ../_sass/screen.scss */
-.sidebar h3 {
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-  color: #c7ddf2;
-  font-weight: bold;
-  margin-top: 3em;
+
+/* line 46, ../_sass/screen.scss */
+header {
+  width: 100%;
+  border-bottom: 1px solid #4663c1;
 }
 /* line 50, ../_sass/screen.scss */
-.sidebar a {
-  font-family: "minion-pro", Minion Pro, serif;
-  color: #c7ddf2;
+header h1 {
+  background-color: #6284ef;
+  border-right: 1px solid #4663c1;
+  border-bottom: 1px solid #4663c1;
 }
-
-/* line 56, ../_sass/screen.scss */
-.posts {
-  margin-top: 1em;
-  overflow: scroll;
-}
-/* line 60, ../_sass/screen.scss */
-.posts a {
-  font-size: .875em;
-}
-/* line 63, ../_sass/screen.scss */
-.posts li {
-  margin-bottom: .6em;
+/* line 62, ../_sass/screen.scss */
+header .nav {
+  float: right;
 }
 
 /* line 68, ../_sass/screen.scss */
-.reason {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-/* line 75, ../_sass/screen.scss */
-.reason p {
-  border-top: 1px solid #c7ddf2;
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-  color: #c7ddf2;
-  font-size: .875em;
-  margin: 1em 3em 0;
-  padding: 1em 0 2.5em;
-}
-/* line 83, ../_sass/screen.scss */
-.reason p a {
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-}
-
-/* line 89, ../_sass/screen.scss */
 .content {
-  margin-left: 25%;
+  width: 70%;
+  margin: 4em auto 8em;
+  overflow: hidden;
 }
 
-/* line 93, ../_sass/screen.scss */
-.content-inner {
-  width: 75%;
-  max-width: 600px;
-  min-width: 400px;
-  margin: 5em auto;
-  color: #ed594a;
+/* line 74, ../_sass/screen.scss */
+.metadata {
+  width: 25%;
+  margin-right: 5%;
+  float: left;
 }
-/* line 100, ../_sass/screen.scss */
-.content-inner h3 {
-  font-weight: bold;
-  margin-bottom: 1.4em;
-}
-/* line 105, ../_sass/screen.scss */
-.content-inner h2 {
-  font-family: "minion-pro", Minion Pro, serif;
-  font-size: 1.5em;
-  font-weight: normal;
-  margin-bottom: .5em;
-}
-/* line 112, ../_sass/screen.scss */
-.content-inner p.date {
-  font-family: "inconsolata", courier, monospace;
-  font-size: .875em;
+/* line 79, ../_sass/screen.scss */
+.metadata h3 {
+  padding: 0.8em 0;
+  border-bottom: 1px solid #4663c1;
 }
 
+/* line 85, ../_sass/screen.scss */
+.post-container {
+  width: 70%;
+  float: right;
+}
+/* line 89, ../_sass/screen.scss */
+.post-container h2 {
+  padding: 0.8em 0;
+  border-bottom: 1px solid #4663c1;
+}
+/* line 94, ../_sass/screen.scss */
+.post-container .post {
+  padding: 1.3em 0;
+  font-family: "franklin-gothic-urw", Franklin Gothic, verdana, helvetica, arial, sans-serif;
+  line-height: 1.71429;
+  border-bottom: 1px solid #4663c1;
+  margin-bottom: 1.3em;
+}
+/* line 102, ../_sass/screen.scss */
+.post-container .post a {
+  -webkit-transition: background-color 0.15s ease;
+  -moz-transition: background-color 0.15s ease;
+  -o-transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease;
+  background-color: #4663c1;
+}
+/* line 106, ../_sass/screen.scss */
+.post-container .post a:hover {
+  background-color: #6284ef;
+}
+/* line 111, ../_sass/screen.scss */
+.post-container .post h2, .post-container .post h3 {
+  display: inline-block;
+  padding: 0;
+  margin: 0.8em 0;
+  border-bottom: 1px solid #4663c1;
+}
 /* line 118, ../_sass/screen.scss */
-.post {
-  margin: 1em 0;
-  border-top: 1px solid #ed594a;
-  padding: 1em 0 0 0;
-  border-bottom: 1px solid #ed594a;
-  font-family: "minion-pro", Minion Pro, serif;
-}
-/* line 124, ../_sass/screen.scss */
-.post p, .post ol {
-  font-size: 1em;
-  line-height: 1.428571429;
-  margin-bottom: 1.5em;
-}
-/* line 130, ../_sass/screen.scss */
-.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: .5em;
-  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-}
-/* line 137, ../_sass/screen.scss */
-.post ol {
+.post-container .post ol {
   list-style-type: decimal;
 }
-/* line 141, ../_sass/screen.scss */
-.post a {
-  color: #ed594a;
+/* line 123, ../_sass/screen.scss */
+.post-container p {
+  margin-bottom: 1.3em;
+}
+/* line 126, ../_sass/screen.scss */
+.post-container p:last-of-type {
+  margin-bottom: 0;
 }
 
-/* line 147, ../_sass/screen.scss */
-.navigation a {
-  display: inline-block;
-  color: #ed594a;
-  font-weight: bold;
-  text-decoration: none;
-  padding-right: 1em;
-  font-size: .875em;
+/* line 133, ../_sass/screen.scss */
+.archive {
+  width: 100%;
+  border-top: 1px solid #4663c1;
 }
-/* line 155, ../_sass/screen.scss */
-.navigation a.disabled {
-  text-decoration: line-through;
-  cursor: default;
+
+/* line 138, ../_sass/screen.scss */
+.archive-item {
+  -webkit-transition: background-color 0.15s ease;
+  -moz-transition: background-color 0.15s ease;
+  -o-transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease;
+  padding: 1.3em 0.8em;
+  border-bottom: 1px solid #4663c1;
+}
+/* line 144, ../_sass/screen.scss */
+.archive-item:hover {
+  background-color: #6284ef;
+}
+/* line 148, ../_sass/screen.scss */
+.archive-item h3, .archive-item h4 {
+  display: inline-block;
+  padding-right: 2em;
+}
+/* line 153, ../_sass/screen.scss */
+.archive-item h4:last-of-type {
+  padding-right: 0;
+  float: right;
+}
+
+/* line 159, ../_sass/screen.scss */
+footer {
+  border-top: 1px solid #4663c1;
+  font-size: 0.875em;
+}
+/* line 168, ../_sass/screen.scss */
+footer .contact {
+  float: right;
+}
+/* line 171, ../_sass/screen.scss */
+footer .contact a {
+  display: inline-block;
+  margin-left: 2em;
 }

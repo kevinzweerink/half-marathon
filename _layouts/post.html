@@ -1,18 +1,22 @@
 ---
 layout: default
 ---
-<div class="content-inner">
+<div class="metadata">
 	<h3>Day {{ page.day }}</h3>
+	<h3>{{ page.date | date_to_string }}</h3>
+	<h3>{{ page.miles }} miles</h3>
+	<h3>{{ page.temp }}&deg;F</h3>
+</div>
+
+<div class="post-container">
+
 	<h2>{{ page.title }}</h2>
-	<p class="date">{{ page.date | date_to_string }} &mdash; {{ page.miles }} miles</p>
 
 	<div class="post">
 	{{ content }}
 	</div>
 
 	<div class="navigation">
-		<a class="{% if page.previous.url == null %}disabled{% endif %}" href="{% if page.previous.url != null %}{{ page.previous.url }}{% endif %}">Prev</a>
-
-		<a class="{% if page.next.url == null %}disabled{% endif %}" href="{% if page.next.url != null %}{{ page.next.url }}{% endif %}">Next</a>
+		<a class="{% if page.previous.url == null %}disabled{% endif %}" href="{% if page.previous.url != null %}{{ page.previous.url }}{% endif %}">Prev</a> // <a class="{% if page.next.url == null %}disabled{% endif %}" href="{% if page.next.url != null %}{{ page.next.url }}{% endif %}">Next</a>
 	</div>
 </div>
