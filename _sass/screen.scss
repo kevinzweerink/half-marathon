@@ -98,6 +98,10 @@ header {
 		border-bottom: $border;
 	}
 
+	a.disabled {
+		text-decoration: line-through;
+	}
+
 	.post {
 		padding: $pad 0;
 		font-family: $sans;

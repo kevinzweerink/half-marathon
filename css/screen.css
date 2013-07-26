@@ -146,6 +146,10 @@ header .nav {
   border-bottom: 1px solid #4663c1;
 }
 /* line 101, ../_sass/screen.scss */
+.post-container a.disabled {
+  text-decoration: line-through;
+}
+/* line 105, ../_sass/screen.scss */
 .post-container .post {
   padding: 1.3em 0;
   font-family: "franklin-gothic-urw", Franklin Gothic, verdana, helvetica, arial, sans-serif;
@@ -154,7 +158,7 @@ header .nav {
   border-bottom: 1px solid #4663c1;
   margin-bottom: 1.3em;
 }
-/* line 109, ../_sass/screen.scss */
+/* line 113, ../_sass/screen.scss */
 .post-container .post a {
   -webkit-transition: background-color 0.15s ease;
   -moz-transition: background-color 0.15s ease;
@@ -162,37 +166,37 @@ header .nav {
   transition: background-color 0.15s ease;
   background-color: #4663c1;
 }
-/* line 113, ../_sass/screen.scss */
+/* line 117, ../_sass/screen.scss */
 .post-container .post a:hover {
   background-color: #6284ef;
 }
-/* line 118, ../_sass/screen.scss */
+/* line 122, ../_sass/screen.scss */
 .post-container .post h2, .post-container .post h3 {
   display: inline-block;
   padding: 0;
   margin: 0.8em 0;
   border-bottom: 1px solid #4663c1;
 }
-/* line 125, ../_sass/screen.scss */
+/* line 129, ../_sass/screen.scss */
 .post-container .post ol {
   list-style-type: decimal;
 }
-/* line 130, ../_sass/screen.scss */
+/* line 134, ../_sass/screen.scss */
 .post-container p {
   margin-bottom: 1.3em;
 }
-/* line 133, ../_sass/screen.scss */
+/* line 137, ../_sass/screen.scss */
 .post-container p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 140, ../_sass/screen.scss */
+/* line 144, ../_sass/screen.scss */
 .archive {
   width: 100%;
   border-top: 1px solid #4663c1;
 }
 
-/* line 145, ../_sass/screen.scss */
+/* line 149, ../_sass/screen.scss */
 .archive-item {
   -webkit-transition: background-color 0.15s ease;
   -moz-transition: background-color 0.15s ease;
@@ -201,31 +205,31 @@ header .nav {
   padding: 1.3em 0.8em;
   border-bottom: 1px solid #4663c1;
 }
-/* line 151, ../_sass/screen.scss */
+/* line 155, ../_sass/screen.scss */
 .archive-item:hover {
   background-color: #6284ef;
 }
-/* line 155, ../_sass/screen.scss */
+/* line 159, ../_sass/screen.scss */
 .archive-item h3, .archive-item h4 {
   display: inline-block;
   padding-right: 2em;
 }
-/* line 160, ../_sass/screen.scss */
+/* line 164, ../_sass/screen.scss */
 .archive-item h4:last-of-type {
   padding-right: 0;
   float: right;
 }
 
-/* line 166, ../_sass/screen.scss */
+/* line 170, ../_sass/screen.scss */
 footer {
   border-top: 1px solid #4663c1;
   font-size: 0.9375em;
 }
-/* line 175, ../_sass/screen.scss */
+/* line 179, ../_sass/screen.scss */
 footer .contact {
   float: right;
 }
-/* line 178, ../_sass/screen.scss */
+/* line 182, ../_sass/screen.scss */
 footer .contact a {
   display: inline-block;
   margin-left: 2em;
