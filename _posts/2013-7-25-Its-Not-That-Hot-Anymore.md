@@ -1,6 +1,6 @@
 ---
 title: It's Not That Hot Anymore
-day: 6
+day: 9
 miles: 3.08
 layout: post
 temp: 62

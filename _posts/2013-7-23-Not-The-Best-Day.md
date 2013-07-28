@@ -1,7 +1,7 @@
 ---
 title: Not The Best Day
 miles: 3.11
-day: 4
+day: 7
 layout: post
 temp: 75
 ---
