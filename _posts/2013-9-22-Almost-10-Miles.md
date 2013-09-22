@@ -1,0 +1,8 @@
+---
+title: Almost 10 Miles
+miles: 9.79
+temp: 65
+day: 67
+layout: post
+---
+What a run! I overshot my required distance of 9 miles by almost a whole mile! It was a beautiful day too. My route today went down Charles to the Inner Harbor, then followed the piers down to Harbor East, then Lancaster Street to Fell's Point, Aliceanna back to Harbor East, followed the piers back to the Inner Harbor, wrapped around to Key Highway, then up Lawrence to Fort Ave, then Fort to Light Street, Light back up to Lombard to Guilford to Mt Royal, ending at the intersection of Mt Royal and Dolphin. I was definitely pretty tired for a lot of the run today, and I forgot my hat so I think I got a little sunburned on my face. I discovered a new part of Federal Hill that I'd never been in, so that was cool. It seems like it would be a nice place to live; there are lots of little markets and stuff. I also ate one of those Gu things around mile 5.5, which I think helped me going uphill on Fort Avenue for sure. They don't taste as bad when you're running as they do beforehand. My route was supposed to end around Guilford and Mt. Royal, but I wanted to run down the hill to Charles, so I could end going fast, and then by the time I got there I figured that I may as well just go all the way to Dolphin Street and see if that made the total 10 miles. It didn't quite, but I'm confident now that I can run 10 miles next weekend, and then 10 or 11 the weekend after that. After that is the half marathon! It is getting very close.
